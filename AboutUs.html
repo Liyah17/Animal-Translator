@@ -1,121 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animal Translator</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    #about-us {
-      background-color: #ffffff; /* Changed background color to white */
-      color: #000000; /* Changed text color to black */
-      padding: 100px 0;
-    }
-    #about-us h2 {
-      color: orange; /* Changed title color to orange */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Translator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        main {
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Animal Translator</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#about-us">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#app">App</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#instructions">Instructions</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#reviews">Reviews</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<!-- About Us Page -->
-<section id="about-us">
-  <div class="container">
-    <div class="row justify-content-center"> <!-- Center align content -->
-      <div class="col-md-8">
+    <header>
+        <h1>Welcome to the Animal Translator</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dog.html">Dog</a>
+        <a href="cat.html">Cat</a>
+        <a href="bird.html">Bird</a>
+        <a href="other.html">Other</a>
+    </nav>
+    <main>
         <h2>About Us</h2>
-        <p>Our app is called (ai) animal intelligence, an app about understanding your animal. With just a small connection. Our app works with connecting your device to our special collar.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        <p>This is a website where you can learn about various animals and their translations.</p>
+        <p>Click on the links above to explore different animals!</p>
+    </main>
 
-<!-- App Page -->
-<section id="app" class="py-5 bg-light">
-  <div class="container">
-    <h2>App</h2>
-    <p>Get our amazing animal translator app for just $10!</p>
-  </div>
-</section>
-
-<!-- Instructions Page -->
-<section id="instructions" class="py-5">
-  <div class="container">
-    <h2>Instructions</h2>
-    <p>Here are the instructions on how to work the collars...</p>
-  </div>
-</section>
-
-<!-- Reviews Page -->
-<section id="reviews" class="py-5 bg-light">
-  <div class="container">
-    <h2>Reviews</h2>
-    <p>Check out what our customers are saying about us!</p>
-  </div>
-</section>
-
-<!-- Contact Page -->
-<section id="contact" class="py-5">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>Get in touch with us:</p>
-    <form>
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" class="form-control" id="name">
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email">
-      </div>
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea class="form-control" id="message" rows="5"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="py-4 bg-dark text-white text-center">
-  <div class="container">
-    <p>&copy; 2024 Animal Translator</p>
-  </div>
-</footer>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
 
 
