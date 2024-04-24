@@ -3,20 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Contact - Animal Translator</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
     body {
-      background-color: #9adaf0; /* Light blue background color */
+      background-color: #80cbe2; /* Light blue background color */
+      font-family: Arial, sans-serif; /* Professional font family */
+    }
+    .container {
+      margin-top: 30px; /* Improved spacing */
+    }
+    .col-md-4 {
+      margin-bottom: 30px; /* Improved spacing */
+    }
+    h2 {
+      margin-bottom: 20px; /* Improved spacing */
+    }
+    h4 {
+      margin-bottom: 10px; /* Improved spacing */
+    }
+    img {
+      max-width: 100%; /* Responsive image width */
+      height: auto;
+    }
+    p {
+      margin-bottom: 15px; /* Improved spacing */
     }
   </style>
 </head>
 <body>
-  <h1>Contact!</h1>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Animal Translator</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +55,7 @@
             <a class="nav-link" href="Reviews.html">Reviews</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page">Contact</a>
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,5 +76,48 @@
       </div>
     </div>
   </nav>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2>Get In Touch</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="address.png" alt="Address">
+            <h4>ADDRESS</h4>
+            <p>
+              <strong>Animal Intelligence</strong><br>
+              157 Otterford Path<br>
+              Denver, CO 80223<br><br>
+              <strong>Southern Division Office</strong><br>
+              245 Enchanted Road<br>
+              Windor, CO 80550
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="email.png" alt="Email">
+            <h4>EMAIL</h4>
+            <p>
+              Request for Proposal<br>
+              Info@animalgroup.com<br>
+              Careers@animalintelligence.com
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="phone.png" alt="Phone">
+            <h4>PHONES</h4>
+            <p>
+              Animal Intelligence<br>
+              (654) 9487-3536<br><br>
+              Southern Division Office<br>
+              (637) 4839-0948
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

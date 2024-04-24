@@ -10,7 +10,48 @@
   <style>
     /* Custom CSS */
     body {
-      background-color: #9adaf0; /* Light blue background color */
+      background-color:#f7bf99; /* Light blue background color */
+      
+    }
+    .list-group-item {
+      border: none;
+      background-color: transparent;
+      padding-left: 50px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #007bff; /* Blue circle color */
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: bold;
+      position: absolute;
+      left: -40px;
+      top: 0;
+    }
+    .circle-text {
+      font-size: 18px;
+    }
+    /* Additional styles for design enhancement */
+    .list-group-item:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 25px;
+      height: 2px;
+      width: 40px;
+      background-color: #007bff; /* Blue line color */
+    }
+    .list-group-item:last-child:before {
+      display: none;
+    }
+    .instruction-text {
+      margin-left: 70px;
     }
   </style>
 </head>
@@ -65,9 +106,40 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8">
-          <h1>IMPORTANT!</h1>
-          <!-- Add instructions here -->
-          <p>When using our app, please ensure that you provide accurate information, especially regarding your pet's breed. Providing incorrect information may affect the app's ability to process your pet.</p>
+          <h1 class="text-center">IMPORTANT!</h1>
+          <!-- List group with circle designs -->
+          <div class="list-group">
+            <div class="list-group-item">
+              <div class="circle">
+                <span class="circle-text">1</span>
+              </div>
+              <p class="instruction-text">Flip the collar over and turn it on.</p>
+            </div>
+            <div class="list-group-item">
+              <div class="circle">
+                <span class="circle-text">2</span>
+              </div>
+              <p class="instruction-text">Connect the device to your cellular device.</p>
+            </div>
+            <div class="list-group-item">
+              <div class="circle">
+                <span class="circle-text">3</span>
+              </div>
+              <p class="instruction-text">Fill out the information on our app page.</p>
+            </div>
+            <div class="list-group-item">
+              <div class="circle">
+                <span class="circle-text">4</span>
+              </div>
+              <p class="instruction-text">Put the collar on the dog.</p>
+            </div>
+            <div class="list-group-item">
+              <div class="circle">
+                <span class="circle-text">5</span>
+              </div>
+              <p class="instruction-text">The collar should light up and you're all set.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

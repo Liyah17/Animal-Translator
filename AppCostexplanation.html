@@ -10,7 +10,33 @@
   <style>
     /* Custom CSS */
     body {
-      background-color: #fd9c42a1; /* Light orange background color */
+      background-color: #115cffa2; /* Light orange background color */
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+    .nav-link {
+      font-weight: 500;
+    }
+    .navbar-toggler-icon {
+      color: #000000;
+    }
+    .logo {
+      max-width: 200px;
+    }
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -18,7 +44,7 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand" href="#">Animal Translator</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -62,12 +88,11 @@
 
   <!-- App Details Section -->
   <section id="about-us">
-    <div class="container">
+    <div class="container text-center"> <!-- Centering content -->
       <div class="row justify-content-center">
         <div class="col-md-8">
-          <h2>Our App</h2>
-          <p>Welcome to the Animal Translator App!</p>
-          <img src="vecteezy.com" alt="Animal Translator Logo" class="logo img-fluid mt-3 mb-3">
+          <h2>Welcome to the Animal Translator App!</h2>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgk9vCjHHHYCkTkAar06MuV6YGYzsrj5Rso_p6nJY8g&s" alt="Animal Translator Logo" class="logo img-fluid mt-3 mb-3 rounded-circle">
           <h3>Why does this app cost $10?</h3>
           <p>Our app is priced at $10 due to the investment in development and maintenance. We strive to deliver a high-quality user experience, which requires significant resources and expertise.</p>
           <h3>Important Information</h3>
@@ -81,4 +106,49 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+<!-- Professional Form Section -->
+<!-- Professional Form Section -->
+<section id="professional-form">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2>Tell Us About Your Pet</h2>
+        <form id="myForm">
+          <!-- Type Input -->
+          <div class="mb-3">
+            <label for="type" class="form-label">Type of Animal:</label>
+            <input type="text" class="form-control" id="type" name="type" placeholder="E.g., Dog, Cat, Bird" required>
+          </div>
+          <!-- Gender Input -->
+          <div class="mb-3">
+            <label for="gender" class="form-label">Gender:</label>
+            <select class="form-select" id="gender" name="gender" required>
+              <option value="">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <!-- Breed Input -->
+          <div class="mb-3">
+            <label for="breed" class="form-label">Breed (Optional):</label>
+            <input type="text" class="form-control" id="breed" name="breed" placeholder="E.g., Labrador, Siamese">
+          </div>
+          <!-- Weight Input -->
+          <div class="mb-3">
+            <label for="weight" class="form-label">Weight (in lbs):</label>
+            <input type="number" class="form-control" id="weight" name="weight" placeholder="E.g., 25" required>
+          </div>
+          <!-- Back Button -->
+          <button type="button" class="btn btn-secondary me-2">Back</button>
+          <!-- Save Button -->
+          <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
