@@ -10,7 +10,7 @@
   <style>
     /* Custom CSS */
     body {
-      background-color:#f7bf99; /* Light blue background color */
+      background-color: #f7bf99; /* Light blue background color */
     }
     .list-group-item {
       border: none;
@@ -59,13 +59,42 @@
       border-radius: 10px; /* Rounded corners */
       background-color: #e1f5fe; /* Light blue background color */
     }
+    /* Additional styles for search bar */
+    .search-form {
+      position: relative;
+    }
+    .search-input {
+      border-radius: 20px;
+      border: 2px solid #007bff; /* Blue border */
+      padding: 8px 15px;
+      transition: all 0.3s;
+      width: 200px;
+    }
+    .search-input:focus {
+      outline: none;
+      border-color: #007bff; /* Blue border when focused */
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Box shadow when focused */
+    }
+    .search-btn {
+      background-color: #007bff; /* Blue background color */
+      border: none;
+      border-radius: 20px;
+      color: #fff; /* White text color */
+      cursor: pointer;
+      font-size: 16px;
+      padding: 8px 20px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   </style>
 </head>
 <body>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand" href="#">Animal Translator</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -82,31 +111,26 @@
             <a class="nav-link active" aria-current="page" href="#">Instructions</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Reviews.html">Reviews</a>
+            <a class="nav-link" href="review.html">Reviews</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Contact.html">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Collars
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Prices</a></li>
-              <li><a class="dropdown-item" href="#">Special Sales</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something Else</a></li>
-            </ul>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        <!-- Search form -->
+        <form class="d-flex search-form">
+          <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success search-btn" type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
-
+  
   <!-- Instructions Section -->
   <section id="instructions">
     <div class="container">
@@ -114,54 +138,54 @@
         <div class="col-md-8">
           <h1 class="text-center">Instructions</h1>
           <!-- List group with circle designs -->
-          <div class="list-group">
-            <div class="list-group-item">
-              <div class="circle">
-                <span class="circle-text">1</span>
+            <div class="list-group">
+              <div class="list-group-item">
+                <div class="circle">
+                  <span class="circle-text">1</span>
+                </div>
+                <div class="instruction-box">
+                  <p class="instruction-text">Flip the collar over and turn it on.</p>
+                </div>
               </div>
-              <div class="instruction-box">
-                <p class="instruction-text">Flip the collar over and turn it on.</p>
+              <div class="list-group-item">
+                <div class="circle">
+                  <span class="circle-text">2</span>
+                </div>
+                <div class="instruction-box">
+                  <p class="instruction-text">Connect the device to your cellular device.</p>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <div class="circle">
+                  <span class="circle-text">3</span>
+                </div>
+                <div class="instruction-box">
+                  <p class="instruction-text">Fill out the information on our app page.</p>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <div class="circle">
+                  <span class="circle-text">4</span>
+                </div>
+                <div class="instruction-box">
+                  <p class="instruction-text">Put the collar on the dog.</p>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <div class="circle">
+                  <span class="circle-text">5</span>
+                </div>
+                <div class="instruction-box">
+                  <p class="instruction-text">The collar should light up and you're all set.</p>
+                </div>
               </div>
             </div>
-            <div class="list-group-item">
-              <div class="circle">
-                <span class="circle-text">2</span>
-              </div>
-              <div class="instruction-box">
-                <p class="instruction-text">Connect the device to your cellular device.</p>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="circle">
-                <span class="circle-text">3</span>
-              </div>
-              <div class="instruction-box">
-                <p class="instruction-text">Fill out the information on our app page.</p>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="circle">
-                <span class="circle-text">4</span>
-              </div>
-              <div class="instruction-box">
-                <p class="instruction-text">Put the collar on the dog.</p>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <div class="circle">
-                <span class="circle-text">5</span>
-              </div>
-              <div class="instruction-box">
-                <p class="instruction-text">The collar should light up and you're all set.</p>
-              </div>
-            </div>
+          <div class="text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimQVOZy4NbgjaW5Z1DDMjmA7-4KGM8qubKyqtQGoQkg&s">
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- Bootstrap Bundle (JS) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script
