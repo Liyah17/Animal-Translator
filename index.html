@@ -21,7 +21,7 @@
     }
     .section-heading {
       text-align: center;
-      color: #333;
+      color: #000000;
       margin-bottom: 30px; /* Add space below section headings */
     }
     .section-content {
@@ -39,102 +39,127 @@
       height: auto;
       margin-bottom: 20px; /* Add space below images */
     }
+    .animal-image {
+      width: 100%;
+      height: auto;
+      max-width: 300px; /* Limit the width of animal images */
+    }
+    .connected-line::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 2px;
+      height: calc(100% - 50%);
+      background-color: white;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
   </style>
 </head>
 <body>
-
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Animal Translator</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AppCostexplanation.html">App</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Instructions.html">Instructions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Review.html">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Collars
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="prices.html">Prices</a></li>
+            <li><a class="dropdown-item" href="#">Special Sales</a></li>
+          </ul>
+        </li> 
+      </ul>
+    </div>
+  </nav>
 <!-- Welcome Page -->
-<section id="welcome" class="py-5 text-center">
-  <div class="container">
-    <h1 class="display-4">Wanna Understand Your Animal?</h1>
+<section id="welcome" class="py-5 text-center" style="background-color: #64bee7a1; position: relative;">
+  <div class="container" style="position: relative;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgk9vCjHHHYCkTkAar06MuV6YGYzsrj5Rso_p6nJY8g&s" alt="Animal Translator Logo" class="img-fluid rounded-circle" style="width: 175px; position: absolute; top: 20px; left: 20px;">
+    <h1 class="display-4 mt-3">Welcome to Animal Translator</h1>
+    <p class="lead">Unlock the secret language of your pets.</p>
     <p class="lead">Understand your pet's needs and emotions like never before!</p>
-    <a href="#about-us" class="btn btn-primary btn-lg">Learn More</a> <!-- Change button color to primary -->
+    <a href="#about-us" class="btn btn-primary btn-lg mt-3">Learn More</a> <!-- Change button color to primary -->
   </div>
 </section>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Animal Translator</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#aboutus">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="AppCostexplanation.html">App</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#instructions">Instructions</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#reviews">Collars</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Reviews</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
 
+
+<!-- About Us -->
 <section id="about-us" class="py-5" style="background-color: #f5aa79;">
   <div class="container">
     <h2 class="section-heading">About Us</h2>
     <p class="section-content">Our app, called (ai) animal intelligence, is designed to help you better understand your pet's needs and emotions. By connecting your device to our special collar, you can translate your pet's sounds and behaviors into understandable language.</p>
     <div class="row justify-content-center mt-4">
-      <div class="col-md-4 text-center">
-        <img src="phone_image.png" alt="Phone Image" class="img-fluid">
-        <div class="search-form mt-3">
-          <label for="animal-select" class="form-label">Select Animal:</label>
-          <select class="form-select" id="animal-select">
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="bird">Bird</option>
-            <!-- Add more options as needed -->
-          </select>
-        </div>
+      <div class="col-md-4 text-center mb-4">
+        <img src="https://www.billpolice.com/wp-content/uploads/2015/11/shutterstock_269656679-2.jpg" alt="Phone Image" class="img-fluid phone-image">
       </div>
-      <div class="col-md-4 text-center">
-        <img src="animal_image.png" alt="Animal Image" class="img-fluid">
+    </div>
+  </div>
+</section>
+
+<!-- App -->
+<section id="app" class="py-5" style="background-color: #6ab0d1;">
+  <div class="container text-center">
+    <h2 class="section-heading">About Our App</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgk9vCjHHHYCkTkAar06MuV6YGYzsrj5Rso_p6nJY8g&s" alt="Animal Translator Logo" class="logo img-fluid mt-4 mb-4 rounded-circle" style="width: 200px; max-width: 100%;">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h3>Why Does This App Cost $10?</h3>
+        <p>Our app is priced at $10 due to the investment in development and maintenance. We strive to deliver a high-quality user experience, which requires significant resources and expertise.</p>
+        <h3>Important Information</h3>
+        <p>When using our app, please ensure that you provide accurate information, especially regarding your pet's breed. Providing incorrect information may affect the app's ability to process your pet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Instructions -->
+<section id="instructions" class="py-5" style="background-color: #f5aa79;">
+  <div class="container">
+      <h2 class="section-heading">Instructions</h2>
+      
+      <p class="section-content">To use our animal translator collar, simply attach it to your pet's collar and activate the app on your device. Follow the on-screen instructions to calibrate the collar to your pet's unique vocalizations. Once calibrated, you'll be able to understand your pet's needs and feelings.</p>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="py-5" style="background-color: #6ab0d1;">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2 class="section-heading mb-4">Reviews</h2>
+        <img src="https://limitsofstrategy.com/wp-content/uploads/2021/03/google-reviews1.jpg" alt="Reviews Image" class="img-fluid mb-4" style="max-width: 100%;">
+        <p class="section-content">Discover what our valued customers are saying about us! Our Animal Translator app has garnered praise from pet owners worldwide. Join the community and experience the satisfaction of truly understanding your furry companions.</p>
+        <a href="Review.html" class="btn btn-primary">Read More Reviews</a>
       </div>
     </div>
   </div>
 </section>
 
 
-
-
-
-<section id="app" class="py-5 style="background-color:#fd9c42a1;">
-  <div class="container">
-      <h2 class="section-heading">App</h2>
-      <img src="app.jpg" alt="App Image">
-      <p class="section-content">Get our amazing animal translator app for just $10! With our app, you'll be able to communicate with your pets like never before. Download now and start understanding your furry friends.</p>
-  </div>
-</section>
-
-<section id="instructions" class="py-5" style="background-color: #f5aa79;">
-  <div class="container">
-      <h2 class="section-heading">Instructions</h2>
-      <img src="instructions.jpg" alt="Instructions Image">
-      <p class="section-content">To use our animal translator collar, simply attach it to your pet's collar and activate the app on your device. Follow the on-screen instructions to calibrate the collar to your pet's unique vocalizations. Once calibrated, you'll be able to understand your pet's needs and feelings.</p>
-  </div>
-</section>
-
-<section id="reviews" class="py-5 style="background-color:#fd9c42a1;">
-  <div class="container">
-      <h2 class="section-heading">Reviews</h2>
-      <img src="reviews.jpg" alt="Reviews Image">
-      <p class="section-content">Check out what our customers are saying about us! Our animal translator app has received rave reviews from pet owners around the world who have experienced the joy of connecting with their pets on a deeper level.</p>
-  </div>
-</section>
-
-<!-- Contact Page -->
+<!-- Contact -->
 <section id="contact" class="py-5" style="background-color: #f5aa79;">
   <div class="container">
     <h2 class="section-heading">Contact</h2>
@@ -161,6 +186,7 @@
 <footer class="py-4 bg-dark text-white text-center">
   <div class="container">
     <p>&copy; 2024 Animal Translator</p>
+    
   </div>
 </footer>
 
@@ -170,7 +196,3 @@
 
 </body>
 </html>
-
-
-
-
